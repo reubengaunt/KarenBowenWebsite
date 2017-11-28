@@ -12,61 +12,61 @@
 <style type="text/css">
 <!--
 body {
-	background: #FFFFFF;
-	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-	padding: 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	color: #000000;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+  background: #FFFFFF;
+  margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+  padding: 0;
+  text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+  color: #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
 }
 a {
-	text-decoration:none;
+  text-decoration:none;
 }
 #container {
-	margin: 0 auto;
-	width: 1100px;
+  margin: 0 auto;
+  width: 1100px;
 }
 #header {
-	text-align: center;
-	padding: 35px 0 40px 0;
-	height: 75px;
+  text-align: center;
+  padding: 35px 0 40px 0;
+  height: 75px;
 }
 #maincontent {
-	width: 1100px;
-	height: 700px;
-	background-image: url(images/wedding-makeup-website-scotland-background.jpg);
-	background-repeat: no-repeat;
-	text-align: center;
+  width: 1100px;
+  height: 700px;
+  background-image: url(images/wedding-makeup-website-scotland-background.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
 }
 #topcontent {
-	height: 460px;
-	padding: 60px 0 0 0;
+  height: 460px;
+  padding: 60px 0 0 0;
 }
 #leftcontent {
-	float: left;
-	width: 410px;
-	padding: 0px 30px 0px 60px;
-	text-align: center;
-	font-size: 14px;
-	color: #663333;
+  float: left;
+  width: 410px;
+  padding: 0px 30px 0px 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #663333;
 }
 #rightcontent {
-	float: right;
-	width: 450px;
-	padding: 0 120px 0 30px;
-	text-align: left;
+  float: right;
+  width: 450px;
+  padding: 0 120px 0 30px;
+  text-align: left;
 }
 #navigation {
-	width: 1100px;
-	height: 150px;
-	text-align: center;
+  width: 1100px;
+  height: 150px;
+  text-align: center;
 }
 #footer {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 10px;
-	color: #999;
-	text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
 }
 -->
 </style>
@@ -110,11 +110,73 @@ function MM_swapImage() { //v3.0
     <p>&nbsp;</p>
     <p><img src="images/contact-wedding-makeup-scotland.jpg" width="150" height="31" alt="Wedding makeup in Scotland, About Karen Bowen" /><br />
     </p>
-
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="full_name">Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="full_name" maxlength="100" size="30">
+ </td>
+</tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="wedding_no">Number of Makeups Required</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="wedding_no" maxlength="10" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="wedding_location">Wedding Location</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="wedding_location" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="wedding_date">Date of Wedding</label>
+ </td>
+ <td valign="top">
+  <input  type="date" name="wedding_date" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
 </table>
-    </form>
+</form>
     <p>      <strong><br />
-      Tel:</strong> 01592 611359 &nbsp;  <br /><br /> <strong>Mob:</strong> 07751 247007 &nbsp;  <br /><br /> <strong>Email: </strong><a style="color:#663333;" href="mailto:k-bowen@hotmail.co.uk"><em>k-bowen@hotmail.co.uk</em></a><br />
+      Tel:</strong> 01592 
+      611359 &nbsp;  <strong>Mob:</strong> 07751 247007 &nbsp;  <strong>Email: </strong><a style="color:#663333;" href="mailto:k-bowen@hotmail.co.uk"><em>k-bowen@hotmail.co.uk</em></a><br />
     </p>
 </div>
   <!-- end #topcontent -->
